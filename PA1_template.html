@@ -221,7 +221,7 @@ with(d, plot(interval, daily.activity, type = &quot;l&quot;))
 
 <h2>Imputing missing values</h2>
 
-<p><strong>2304</strong> is the total number of missing values in the dataset </p>
+<p><strong>2304</strong> is the total number of missing values in the dataset. To impute missing values, the average daily activity per interval already computed as daily.activity are rounded to the nearest integer and inserted.</p>
 
 <pre><code class="r">DT &lt;- copy(activity)
 setkey(DT, interval)
